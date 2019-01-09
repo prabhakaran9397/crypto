@@ -38,7 +38,7 @@ int main(int argc, char* argv[])
 	else		scanf("%s", input);
 
 	output = hex_to_ascii(input);
-	printf("%s\n", output);
+	printf("%s", output);
 	
 	return 0;
 }
