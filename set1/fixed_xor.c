@@ -55,7 +55,7 @@ int main(int argc, char* argv[])
 
 	if(argc > 1) {	
 		strcpy(input1, argv[1]);
-		strcpy(input2, argv[1]);
+		strcpy(input2, argv[2]);
 	}
 	else {
 		scanf("%s", input1);
