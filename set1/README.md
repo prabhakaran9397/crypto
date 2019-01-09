@@ -62,3 +62,23 @@ Achievement Unlocked:
 ```
 You now have our permission to make "ETAOIN SHRDLU" jokes on Twitter.
 ```
+
+Answer:
+```
+Cooking MC's like a pound of bacon
+```
+
+------------------------------------------------------------------------------------------------
+
+Detect single-character XOR
+
+One of the 60-character strings in this file has been encrypted by single-character XOR.
+
+Find it.
+
+(Your code from #3 should help.)
+
+Answer:
+```
+Now that the party is jumping
+```
