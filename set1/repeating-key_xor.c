@@ -56,13 +56,13 @@ int main(int argc, char* argv[])
 	char* input2 = malloc(sizeof(char)*SIZE);
 	char* output;
 	
-	if(argc != 2) {
-		printf("Usage: printf \"<String>\" | %s <key>\n", argv[0]);
+	if(argc != 3) {
+		printf("Usage: %s \"<string>\" <key>\n", argv[0]);
 		return 1;
 	}
 
-	strcpy(input2, argv[1]);
-	scanf("%[^EOF]s", input1);
+	strcpy(input1, argv[1]);
+	strcpy(input2, argv[2]);
 
 	output = repeating_key_xor(input1, input2);
 	printf("%s\n", output);

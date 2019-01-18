@@ -93,7 +93,10 @@ int main(int argc, char* argv[])
 	char* output;
 
 	if(argc > 1)	strcpy(input, argv[1]);
-	else		scanf("%[^EOF]s", input);
+	else {
+		printf("Usage: %s \"<input>\"\n", argv[0]);
+		return 1;
+	}
 
 	output = hex_to_base64(input);
 	printf("%s\n", output);
