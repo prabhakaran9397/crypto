@@ -25,8 +25,9 @@ char* ascii_to_hex(char* input, int len)
 	int i;
 	for(i=0; i<len; i++) {
 		local_copy = integer_to_hex(input[i]);
-		output[2*i]   = local_copy[0];
-		output[2*i+1] = local_copy[1];
+		output[3*i]   = local_copy[0];
+		output[3*i+1] = local_copy[1];
+		output[3*i+2] = ' ';
 	}
 	return output;
 }
