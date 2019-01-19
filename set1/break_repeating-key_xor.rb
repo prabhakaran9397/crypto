@@ -13,5 +13,7 @@ key = String.new
 	block = (index..input.size-1).step(keysize).collect{|i|input[i]}
 	key += single_key_xor(dec_to_hex_str block)[:hex]
 end
+input = input.map(&:to_i)
+key   = ascii_to_decimal_arr(hex_to_ascii(key))
 
-puts hex_to_ascii key
+puts hex_to_ascii repeating_key_xor input, key

@@ -37,6 +37,19 @@ def hex_to_ascii(a)
 	`echo '#{a}' | ./hex_to_ascii`.chomp
 end
 
+def ascii_to_decimal_arr(a)
+        a.split('').map{|i|i.ord}
+end
+
+def repeating_key_xor(str, key)
+        key = key * (str.size/key.size + 1)
+        res = Array.new
+        (0..str.size-1).each do |i|
+                res << (str[i].to_i ^ key[i].to_i)
+        end
+        dec_to_hex_str(res)
+end
+
 def single_key_xor input
 	maxfreq_hex = input.scan(/.{2}/).max_by{ |i| input.scan(/.{2}/).count(i) }
 	solutions = []
