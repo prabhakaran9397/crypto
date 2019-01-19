@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define SIZE		1000
+#define SIZE 10000
 
 int char_to_int(char c) {
 	return c-'0';
