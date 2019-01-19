@@ -103,3 +103,7 @@ It should come out to:
 ```
 
 Encrypt a bunch of stuff using your repeating-key XOR function. Encrypt your mail. Encrypt your password file. Your .sig file. Get a feel for it. I promise, we aren't wasting your time with this.
+
+------------------------------------------------------------------------------------------------
+
+![Challenge 6](./images/6.png)
